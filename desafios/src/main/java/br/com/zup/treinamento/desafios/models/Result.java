@@ -1,11 +1,16 @@
 package br.com.zup.treinamento.desafios.models;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
-import com.fasterxml.jackson.annotation.JsonProperty;
+
+import javax.persistence.*;
 
 @JsonIgnoreProperties(ignoreUnknown = true)
+@Entity
+@Table(name = "comics")
 public class Result {
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String title;
     private String description;
