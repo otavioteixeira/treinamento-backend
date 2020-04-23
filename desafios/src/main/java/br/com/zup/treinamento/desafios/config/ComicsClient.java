@@ -9,9 +9,9 @@ public class ComicsClient {
 
     public Comics listApiConnect() {
         // Chave publica da conta na API da Marvel
-        String publicKey = "550f5c72dcabda1715e5efe7a7a66261";
+        String publicKey = "{PUBLIC_KEY}";
         // Chave privada da conta na API da Marvel
-        String privateKey = "7f565a023180c6f276235e750abc9c7e2887eadc";
+        String privateKey = "{PRIVATE_KEY}";
 
         // Pegando a data e hora atual
         Long timeStamp = System.currentTimeMillis();
